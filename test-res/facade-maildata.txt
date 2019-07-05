@@ -1,0 +1,4 @@
+sysadmin@gnu.org=sysadmin
+assign@gnu.org=assign
+licensing@gnu.org=licensing
+webmasters@gnu.org=webmaster
