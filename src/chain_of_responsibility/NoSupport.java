@@ -1,4 +1,4 @@
-package cor;
+package chain_of_responsibility;
 
 public class NoSupport extends Support {
     public NoSupport(String name) {

@@ -1,4 +1,4 @@
-package cor;
+package chain_of_responsibility;
 
 public abstract class Support {
     private String name;

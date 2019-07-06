@@ -1,4 +1,4 @@
-package cor;
+package chain_of_responsibility;
 
 public class OddSupport extends Support {
     public OddSupport(String name) {

@@ -1,4 +1,4 @@
-package cor;
+package chain_of_responsibility;
 
 public class LimitSupport extends Support {
     private int limit;

@@ -1,4 +1,4 @@
-package cor;
+package chain_of_responsibility;
 
 public class SpecialSupport extends Support {
     private int number;
