@@ -1,6 +1,6 @@
 package stateful_stateless_splitting;
 
-class Account {
+public class Account {
     public static final double MIN_BALANCE = 0;
     private String name, address;
     private double balance;
@@ -21,8 +21,9 @@ class Account {
     }
 
     // example 2: get a local copy of "state" and work on that copy.
-    // calculate a function of this.balance.
-    // instead of `synchronize`-ing the whole method ...
+    // Does not guarantee the result is based on the most up-to-date balance; whether this
+    // technique is useful depends on the situation.
+    // Calculate a function of this.balance without `synchronize`-ing the whole method.
     double getProjectedBalance(double rate) {
         double b;
         synchronized (this) {
@@ -35,11 +36,5 @@ class Account {
     double computeProjectedBalance(double balance, double rate) {
         // omit some heavy operation ...
         return balance * rate;
-    }
-}
-
-public class App {
-    public static void main(String[] args) {
-
     }
 }
