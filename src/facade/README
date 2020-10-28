@@ -1,0 +1,10 @@
+Facade Pattern
+=================
+
+I can hardly call this a pattern, because it's just encapsulating complicated things
+and provide simple interface (function calls) for client code. It's like you write a
+class of 100 methods but only 1 of them are `public` because that's the only method
+your client need to call, and all of a sudden such natural practice becomes "facade pattern".
+
+And now you can always say CLI programs are using facade patterns because internally
+they have many modules but to use it their users only need to know those CLI options.
